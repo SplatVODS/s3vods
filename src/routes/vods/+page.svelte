@@ -1,5 +1,5 @@
 <script lang='ts'>
-    import videos from '$lib/data/video_objects';
+    import processedVideos from '$lib/data/video_objects';
     import VideoCard from '$lib/components/VideoCard.svelte';
 
     let query: string = $state("");
@@ -7,19 +7,7 @@
     let currentPage: number = $state(1);
     let itemsPerPage: number = $state(6); // Changed to 6 items per page by default
 
-    const processed_videos = videos.map(({ title, url, player, tags }) => {
-        return {
-            title,
-            url,
-            player,
-            tags,
-            lowerTitle: title.toLowerCase(),
-            lowerPlayer: player.toLowerCase(),
-            lowerTags: tags.map((tag) => tag.toLowerCase())
-        };
-    });
-
-    let filtered_videos = $derived(processed_videos.filter(
+    let filtered_videos = $derived(processedVideos.filter(
         ({ lowerTitle, lowerPlayer, lowerTags }) =>
             lowerTitle.includes(queryLower) ||
             lowerPlayer.includes(queryLower) ||

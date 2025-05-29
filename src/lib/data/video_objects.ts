@@ -1,4 +1,4 @@
-const videos = [
+const rawVideos = [
     {
         title: 'In The Zone',
         url: '/SplatoonVodsIntro.mp4',
@@ -99,4 +99,17 @@ const videos = [
     },
 ];
 
-export default videos;
+
+const processedVideos = rawVideos.map(({ title, url, player, tags }) => {
+    return {
+        title,
+        url,
+        player,
+        tags,
+        lowerTitle: title.toLowerCase(),
+        lowerPlayer: player.toLowerCase(),
+        lowerTags: tags.map((tag) => tag.toLowerCase())
+    };
+});
+
+export default processedVideos;
