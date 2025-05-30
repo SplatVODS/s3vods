@@ -3,14 +3,15 @@
 </script>
 
 <style>
-    .footer-container {
-        display: flex;
+    footer {
         background-color: #d1d3d6;
+        width: 100%;
+        height: 10%;
     }
 
 </style>
 
 
-<div class="footer-container">
-    
-</div>
+<footer>
+    hello
+</footer>
