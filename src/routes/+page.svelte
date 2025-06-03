@@ -23,6 +23,8 @@
         justify-content: flex-start;
         height: 100dvh;
         width: 100%;
+        margin: 0;
+        padding: 0;
     }
 
     .about {
