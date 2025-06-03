@@ -29,8 +29,8 @@
 		<nav>
 			<ul class="nav-list">
 				<li><a href="/" class="nav-link">Home</a></li>
-				<li><a href="/about" class="nav-link">About</a></li>
-				<li><a href="/browse" class="nav-link">Vods</a></li>
+				<li><a href="#about" class="nav-link">About</a></li>
+				<li><a href="/vods" class="nav-link">Vods</a></li>
 			</ul>
 		</nav>
 	</div>
@@ -38,15 +38,15 @@
 
 <style>
 	.header {
-		position: fixed;
+		position: sticky;
+		top: 0;
 		width: 100%;
-		z-index: 100;
+		z-index: 1000;
 		transition: all 0.3s ease;
-		background-color: transparent;
+		background-color: white;
 	}
 
 	.header.scrolled {
-		background-color: white;
 		box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 	}
 
@@ -76,12 +76,6 @@
 		display: flex;
 		align-items: center;
 		text-decoration: none;
-	}
-
-	.logo {
-		width: 2rem;
-		height: 2rem;
-		margin-right: 0.5rem;
 	}
 
 	span {

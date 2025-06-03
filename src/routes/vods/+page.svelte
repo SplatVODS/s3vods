@@ -3,15 +3,14 @@
     import VideoCard from '$lib/components/VideoCard.svelte';
 
     let query: string = $state("");
-    let queryLower: string = $derived(query.toLowerCase());
     let currentPage: number = $state(1);
-    let itemsPerPage: number = $state(6); // Changed to 6 items per page by default
+    let itemsPerPage: number = 6; // Changed to 6 items per page by default
 
     let filtered_videos = $derived(processedVideos.filter(
         ({ lowerTitle, lowerPlayer, lowerTags }) =>
-            lowerTitle.includes(queryLower) ||
-            lowerPlayer.includes(queryLower) ||
-            lowerTags.some((tag) => tag.includes(queryLower))
+            lowerTitle.includes(query.toLowerCase()) ||
+            lowerPlayer.includes(query.toLowerCase()) ||
+            lowerTags.some((tag) => tag.includes(query.toLowerCase()))
     ));
 
     let totalPages = $derived(Math.ceil(filtered_videos.length / itemsPerPage));
@@ -44,14 +43,14 @@
         padding: 10px 20px;
         font-size: 25px;
         font-family: monospace;
-        background-color: rgb(70, 70, 255);
-        color: var(--dull-white);
+        background-color: var(--dull-white);
+        color: rgb(70, 70, 255);
         width: 100%;
         max-width: 300px;
     }
 
     .search-bar::placeholder {
-        color: var(--dull-white);
+        color: rgb(70, 70, 255);
     }
 
     .search-bar:focus {

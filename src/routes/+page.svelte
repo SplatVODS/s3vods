@@ -2,25 +2,30 @@
     import "./global.css";
     import Hero from "$lib/components/Hero.svelte";
     import RedirectButton from "$lib/components/RedirectButton.svelte";
-    import Bar from "$lib/components/Bar.svelte";
     import Nav from "$lib/components/Nav.svelte";
 </script>
+
+<div class="container">
+    <Nav></Nav>
+
+    <Hero/>
+
+    <RedirectButton/>
+
+    <p class="about" id="about">Hello, this web app was created to access Splatoon 3 VODS</p>
+</div>
 
 <style> 
     .container {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
-        height: 100vh;
+        justify-content: flex-start;
+        height: 100dvh;
+        width: 100%;
+    }
+
+    .about {
+        padding: 800px 0 800px 0;
     }
 </style>
-
-<div class="container">
-    <Nav></Nav>
-
-    <Hero/>
-    <RedirectButton/>
-</div>
-
-
