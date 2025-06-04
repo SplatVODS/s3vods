@@ -2,7 +2,7 @@
     import processedVideos from '$lib/data/video_objects';
     import VideoCard from '$lib/components/VideoCard.svelte';
     // use $ to dereference the svelte store when referencing it in logic
-    import { query } from '$lib/data/queryState';
+    import { query } from '$lib/data/query';
     let currentPage: number = $state(1);
     const itemsPerPage: number = 6; // Changed to 6 items per page by default
 

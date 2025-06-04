@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { query } from "$lib/data/queryState"
+    import { query } from "$lib/data/query"
 </script>
 
 <div class="outer-searchbar-container">
