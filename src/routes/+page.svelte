@@ -1,5 +1,5 @@
 <script lang="ts">
-    import "./global.css";
+    import "$lib/styles/global.css";
     import Hero from "$lib/components/Hero.svelte";
     import RedirectButton from "$lib/components/RedirectButton.svelte";
     import Nav from "$lib/components/Nav.svelte";

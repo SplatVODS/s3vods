@@ -36,7 +36,7 @@
 </script>
 
 <style>
-    @import '../base.css';
+    @import '$lib/styles/base.css';
     .search-bar {
         border: none;
         border-radius: 25px;

@@ -1,1 +1,1 @@
-export const stringState: string = $state("");
+export const stateString: string = $state("");
