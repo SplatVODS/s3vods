@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { query } from "$lib/data/query"
+    import { searchQuery } from "$lib/data/query_state.svelte";
 </script>
 
 <div class="outer-searchbar-container">
@@ -7,7 +7,7 @@
     <input
         type="text"
         placeholder="Search VODS..."
-        bind:value={$query}
+        bind:value={searchQuery.value}
         class="search-bar"
     />
     </div>

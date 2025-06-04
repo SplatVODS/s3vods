@@ -1,16 +1,18 @@
 <script lang="ts">
     import processedVideos from "$lib/data/video_objects";
     import VideoCard from "$lib/components/VideoCard.svelte";
-    // use $ to dereference the svelte store when referencing it in logic
-    import { query } from "$lib/data/query";
+    import Searchbar from "$lib/components/Searchbar.svelte";
+    import { searchQuery } from "$lib/data/query_state.svelte";
+
+
     let currentPage: number = $state(1);
     const itemsPerPage: number = 6; // Changed to 6 items per page by default
 
     let filtered_videos = $derived(processedVideos.filter(
         ({ lowerTitle, lowerPlayer, lowerTags }) =>
-            lowerTitle.includes($query.toLowerCase()) ||
-            lowerPlayer.includes($query.toLowerCase()) ||
-            lowerTags.some((tag) => tag.includes($query.toLowerCase()))
+            lowerTitle.includes(searchQuery.value.toLowerCase()) ||
+            lowerPlayer.includes(searchQuery.value.toLowerCase()) ||
+            lowerTags.some((tag) => tag.includes(searchQuery.value.toLowerCase()))
     ));
 
     let totalPages = $derived(Math.ceil(filtered_videos.length / itemsPerPage));
@@ -29,7 +31,7 @@
 
     // Reset to first page when search query changes
     $effect(() => {
-        if ($query) {
+        if (searchQuery.value) {
             currentPage = 1;
         }
     });
@@ -191,8 +193,9 @@
         </button>
     </div>
 
-    <input type="search" class="search-bar" placeholder="Search VODS..." bind:value={$query}/>
-    
+    <!-- <input type="search" class="search-bar" placeholder="Search VODS..." bind:value={searchQuery.value}/> -->
+    <Searchbar/>
+
     <span class="pagination-info">
         Page {currentPage} of {totalPages}
     </span>
@@ -200,7 +203,7 @@
 
 <div class="card-grid">
     {#each paginatedVideos as video}
-    <!-- use a serverless function to fetch video thumbnail from youtube link -->
+    <!-- maybe use a serverless function to fetch video thumbnail from youtube link -->
         <VideoCard {...video}/>
     {/each}
 </div>
