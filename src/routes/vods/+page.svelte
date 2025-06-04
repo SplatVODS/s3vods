@@ -1,16 +1,16 @@
 <script lang='ts'>
     import processedVideos from '$lib/data/video_objects';
     import VideoCard from '$lib/components/VideoCard.svelte';
-
-    let query: string = $state("");
+    // use $ to dereference the svelte store when referencing it in logic
+    import { query } from '$lib/data/queryState';
     let currentPage: number = $state(1);
-    let itemsPerPage: number = 6; // Changed to 6 items per page by default
+    const itemsPerPage: number = 6; // Changed to 6 items per page by default
 
     let filtered_videos = $derived(processedVideos.filter(
         ({ lowerTitle, lowerPlayer, lowerTags }) =>
-            lowerTitle.includes(query.toLowerCase()) ||
-            lowerPlayer.includes(query.toLowerCase()) ||
-            lowerTags.some((tag) => tag.includes(query.toLowerCase()))
+            lowerTitle.includes($query.toLowerCase()) ||
+            lowerPlayer.includes($query.toLowerCase()) ||
+            lowerTags.some((tag) => tag.includes($query.toLowerCase()))
     ));
 
     let totalPages = $derived(Math.ceil(filtered_videos.length / itemsPerPage));
@@ -29,7 +29,7 @@
 
     // Reset to first page when search query changes
     $effect(() => {
-        if (query) {
+        if ($query) {
             currentPage = 1;
         }
     });
@@ -191,7 +191,7 @@
         </button>
     </div>
 
-    <input type="search" class="search-bar" placeholder="Search VODS..." bind:value={query}/>
+    <input type="search" class="search-bar" placeholder="Search VODS..." bind:value={$query}/>
     
     <span class="pagination-info">
         Page {currentPage} of {totalPages}

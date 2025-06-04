@@ -3,9 +3,10 @@
     import Hero from "$lib/components/Hero.svelte";
     import RedirectButton from "$lib/components/RedirectButton.svelte";
     import Nav from "$lib/components/Nav.svelte";
+    import SearchBar from "$lib/components/SearchBar.svelte";
 </script>
 
-<div class="container">
+<div class="layout-container">
     <Nav></Nav>
 
     <Hero/>
@@ -13,10 +14,12 @@
     <RedirectButton/>
 
     <p class="about" id="about">Hello, this web app was created to access Splatoon 3 VODS</p>
+
+    <SearchBar/>
 </div>
 
 <style> 
-    .container {
+    .layout-container {
         display: flex;
         flex-direction: column;
         align-items: center;
