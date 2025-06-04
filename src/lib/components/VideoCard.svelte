@@ -1,10 +1,10 @@
 <script lang="ts">
 	let {
-		title = 'Title',
-		video_url = '/SplatoonVodsIntro.mp4',
-		player = 'Player',
-		social_link = 'https://example.com',
-		tags = ['no tag(s) specified']
+		title = "Title",
+		video_url = "/SplatoonVodsIntro.mp4",
+		player = "Player",
+		social_link = "https://example.com",
+		tags = ["no tag(s) specified"]
 	} = $props();
 </script>
 

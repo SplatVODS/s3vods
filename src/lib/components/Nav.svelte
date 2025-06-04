@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
+	import { onMount } from "svelte";
 
 	let scrollY: number;
 	let scrolled = false;
@@ -10,9 +10,9 @@
 	}
 
 	onMount(() => {
-		window.addEventListener('scroll', handleScroll);
+		window.addEventListener("scroll", handleScroll);
 		return () => {
-			window.removeEventListener('scroll', handleScroll);
+			window.removeEventListener("scroll", handleScroll);
 		};
 	});
 </script>

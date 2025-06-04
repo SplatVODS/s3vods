@@ -1,8 +1,8 @@
-<script lang='ts'>
-    import processedVideos from '$lib/data/video_objects';
-    import VideoCard from '$lib/components/VideoCard.svelte';
+<script lang="ts">
+    import processedVideos from "$lib/data/video_objects";
+    import VideoCard from "$lib/components/VideoCard.svelte";
     // use $ to dereference the svelte store when referencing it in logic
-    import { query } from '$lib/data/query';
+    import { query } from "$lib/data/query";
     let currentPage: number = $state(1);
     const itemsPerPage: number = 6; // Changed to 6 items per page by default
 
@@ -36,7 +36,7 @@
 </script>
 
 <style>
-    @import '$lib/styles/base.css';
+    @import "$lib/styles/base.css";
     .search-bar {
         border: none;
         border-radius: 25px;
