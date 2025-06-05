@@ -83,6 +83,8 @@
 	span {
 		color: black;
 		transition: all 0.3s ease;
+		font-family: sans-serif;
+		font-weight: 800;
 	}
 
 	.nav-list {
@@ -94,7 +96,8 @@
 	}
 
 	.nav-link {
-		font-weight: 500;
+		font-family: sans-serif;
+		font-weight: 600;
 		color: black;
 		text-decoration: none;
 		transition: color 0.3s ease;
