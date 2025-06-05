@@ -13,6 +13,10 @@
         color: #1d1d1d;
         margin-top: 5rem;
     }
+
+    span {
+        text-align: center;
+    }
 </style>
 
 <div class="hero-container">
