@@ -1,9 +1,10 @@
 <script lang="ts">
     import "$lib/styles/global.css";
-    import Hero from "$lib/components/Hero.svelte";
-    import RedirectButton from "$lib/components/RedirectButton.svelte";
     import Nav from "$lib/components/Nav.svelte";
+    import Hero from "$lib/components/Hero.svelte";
     import Searchbar from "$lib/components/Searchbar.svelte";
+	import SocialLinks from "$lib/components/SocialLinks.svelte";
+    import RedirectButton from "$lib/components/RedirectButton.svelte";
 </script>
 
 <div class="layout-container">
@@ -12,6 +13,8 @@
     <Hero/>
 
     <Searchbar/>
+
+    <SocialLinks/>
 
     <RedirectButton/>
 

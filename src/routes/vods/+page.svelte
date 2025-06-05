@@ -1,8 +1,8 @@
 <script lang="ts">
     import processedVideos from "$lib/data/video_objects";
     import VideoCard from "$lib/components/VideoCard.svelte";
-    import Searchbar from "$lib/components/Searchbar.svelte";
     import { searchQuery } from "$lib/data/query_state.svelte";
+    import Searchbar from "$lib/components/Searchbar.svelte";
 
 
     let currentPage: number = $state(1);
@@ -36,6 +36,50 @@
         }
     });
 </script>
+
+<div class="pagination">
+    <div class="pagination-controls">
+        <button 
+            onclick={() => goToPage(1)} 
+            disabled={currentPage === 1}
+        >
+            First
+        </button>
+        <button 
+            onclick={() => goToPage(currentPage - 1)} 
+            disabled={currentPage === 1}
+        >
+            Previous 
+        </button>
+
+        <button 
+            onclick={() => goToPage(currentPage + 1)} 
+            disabled={currentPage === totalPages}
+        >
+            Next
+        </button>
+        <button 
+            onclick={() => goToPage(totalPages)} 
+            disabled={currentPage === totalPages}
+        >
+            Last
+        </button>
+    </div>
+
+    <!-- <input type="search" class="search-bar" placeholder="Search VODS..." bind:value={searchQuery.value}/> -->
+    <Searchbar/>
+
+    <span class="pagination-info">
+        Page {currentPage} of {totalPages}
+    </span>
+</div>
+
+<div class="card-grid">
+    {#each paginatedVideos as video}
+    <!-- maybe use a serverless function to fetch video thumbnail from youtube link -->
+        <VideoCard {...video}/>
+    {/each}
+</div>
 
 <style>
     @import "$lib/styles/base.css";
@@ -163,47 +207,3 @@
         }
     }
 </style>
-
-<div class="pagination">
-    <div class="pagination-controls">
-        <button 
-            onclick={() => goToPage(1)} 
-            disabled={currentPage === 1}
-        >
-            First
-        </button>
-        <button 
-            onclick={() => goToPage(currentPage - 1)} 
-            disabled={currentPage === 1}
-        >
-            Previous 
-        </button>
-
-        <button 
-            onclick={() => goToPage(currentPage + 1)} 
-            disabled={currentPage === totalPages}
-        >
-            Next
-        </button>
-        <button 
-            onclick={() => goToPage(totalPages)} 
-            disabled={currentPage === totalPages}
-        >
-            Last
-        </button>
-    </div>
-
-    <!-- <input type="search" class="search-bar" placeholder="Search VODS..." bind:value={searchQuery.value}/> -->
-    <Searchbar/>
-
-    <span class="pagination-info">
-        Page {currentPage} of {totalPages}
-    </span>
-</div>
-
-<div class="card-grid">
-    {#each paginatedVideos as video}
-    <!-- maybe use a serverless function to fetch video thumbnail from youtube link -->
-        <VideoCard {...video}/>
-    {/each}
-</div>
