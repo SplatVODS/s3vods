@@ -83,7 +83,7 @@
 
 <style>
     @import "$lib/styles/base.css";
-    .search-bar {
+    /* .search-bar {
         border: none;
         border-radius: 25px;
         padding: 10px 20px;
@@ -105,7 +105,7 @@
 
     .search-bar:focus::placeholder {
         color: transparent;
-    }
+    } */
 
     .pagination {
         display: flex;
@@ -183,11 +183,11 @@
             max-width: 200px;
         }
 
-        .search-bar {
+        /* .search-bar {
             width: 100%;
             max-width: none;
             font-size: 20px;
-        }
+        } */
     }
 
     @media screen and (max-width: 600px) {
@@ -201,9 +201,9 @@
             min-width: 60px;
         }
 
-        .search-bar {
+        /* .search-bar {
             font-size: 16px;
             padding: 8px 16px;
-        }
+        } */
     }
 </style>

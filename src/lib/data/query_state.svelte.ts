@@ -1,4 +1,4 @@
-export const currentQuery: string = "";
+export const currentQuery = {value: ""};
 
 // If an IMPORTED state variable needs to be binded or re-assigned,
 // you must use an object sytax when defining, then access the value using variable.value when binding or re-assinging

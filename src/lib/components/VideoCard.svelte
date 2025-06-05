@@ -3,7 +3,7 @@
 		title = "Title",
 		video_url = "/SplatoonVodsIntro.mp4",
 		player = "Player",
-		social_link = "https://example.com",
+		social_link = "https://sendou.ink",
 		tags = ["no tag(s) specified"]
 	} = $props();
 </script>

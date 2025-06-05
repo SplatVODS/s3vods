@@ -17,16 +17,14 @@
 
     <SocialLinks/>
 
-    <RedirectButton/>
-
     <p class="about" id="about">Hello, this web app was created to access Splatoon 3 VODS</p>
+    <RedirectButton/>
 </div>
 
 <style> 
     .layout-container {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
         justify-content: flex-start;
         height: 100dvh;
