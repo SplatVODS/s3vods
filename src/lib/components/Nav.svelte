@@ -21,7 +21,10 @@
 	<div class="container">
 		<div class="branding">
 			<a href="/" class="brand-link">
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+					<circle cx="12" cy="12" r="10" fill="currentColor" />
+					<polygon points="10 8 16 12 10 16" fill="white" stroke="none" />
+				</svg>
                 <span class:scrolled-text={scrolled}>S3 VODS</span>
 			</a>
 		</div>
@@ -55,13 +58,12 @@
     }
 
 	.container {
-		max-width: 1200px;
 		margin: 0 auto;
 		height: 4rem;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		padding: 0 1rem;
+		padding: 0 10%;
 	}
 
 	.branding {

@@ -3,13 +3,19 @@
 </script>
 
 <style>
-    h1 {
-        font-size: 100px;
+    .hero-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 70px;
+        font-weight: 600;
+        font-family: sans-serif;
         color: #1d1d1d;
-        text-shadow: rgba(70, 70, 255, 0.5) -5px 5px 8px;
-        text-align: center;
+        margin-top: 5rem;
     }
 </style>
 
-<h1>Watch Various Splatoon VODS</h1>
-
+<div class="hero-container">
+    <span>Search and Watch</span>
+    <span style="color: rgb(70, 70, 255);">Splatoon VODS</span>
+</div>
