@@ -2,7 +2,7 @@
     import "$lib/styles/global.css";
     import Nav from "$lib/components/Nav.svelte";
     import Hero from "$lib/components/Hero.svelte";
-    import Searchbar from "$lib/components/Searchbar.svelte";
+    import SearchBar from "$lib/components/SearchBar.svelte";
 	import SocialLinks from "$lib/components/SocialLinks.svelte";
     import RedirectButton from "$lib/components/RedirectButton.svelte";
 </script>
@@ -13,7 +13,7 @@
     <Hero/>
 
     <!-- Make the state not update unless the search button is clicked, use form POST request which triggers the filter function -->
-    <Searchbar/>
+    <SearchBar/>
 
     <SocialLinks/>
 

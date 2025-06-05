@@ -17,7 +17,7 @@
         type="text"
         placeholder="Search VODS..."
         bind:value={currentQuery.value}
-        class="search-bar"
+        class="searchbar"
     />
     <button class="svg-button" aria-label="submit-search" on:click={handleSearch}>
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
@@ -33,7 +33,7 @@
         border: 3px solid #4646ff;
     }
 
-    .search-bar {
+    .searchbar {
         outline: none;
         padding: 20px;
         background: transparent;
