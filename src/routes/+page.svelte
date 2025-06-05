@@ -12,6 +12,7 @@
 
     <Hero/>
 
+    <!-- Make the state not update unless the search button is clicked, use form POST request which triggers the filter function -->
     <Searchbar/>
 
     <SocialLinks/>
