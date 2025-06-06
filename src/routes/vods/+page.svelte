@@ -2,7 +2,7 @@
     import processedVideos from "$lib/data/video_objects";
     import VideoCard from "$lib/components/VideoCard.svelte";
     import { searchQuery } from "$lib/data/query_state.svelte";
-    import SearchBar from "$lib/components/SearchBar.svelte";
+    import Search from "$lib/components/Search.svelte";
 
 
     let currentPage: number = $state(1);
@@ -67,7 +67,7 @@
     </div>
 
     <!-- <input type="search" class="search-bar" placeholder="Search VODS..." bind:value={searchQuery.value}/> -->
-    <SearchBar/>
+    <Search/>
 
     <span class="pagination-info">
         Page {currentPage} of {totalPages}
