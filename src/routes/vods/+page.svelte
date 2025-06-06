@@ -124,8 +124,8 @@
 
     .pagination button {
         padding: 8px 16px;
-        border: none;
-        border-radius: 5px;
+        border: 2px solid var(--main-purple);
+        border-radius: 10px;
         background-color: var(--dull-white);
         color: var(--main-purple);
         cursor: pointer;
