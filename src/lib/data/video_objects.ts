@@ -99,7 +99,8 @@ const rawVideos = [
     },
 ];
 
-// can possibly add video id auto inc via id = video.length() + 1
+
+// can possibly add youtube video id to card for easy search
 const processedVideos = rawVideos.map(({ title, url, player, tags }) => {
     return {
         title,

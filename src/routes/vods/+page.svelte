@@ -45,6 +45,7 @@
         >
             First
         </button>
+
         <button 
             onclick={() => goToPage(currentPage - 1)} 
             disabled={currentPage === 1}
@@ -58,6 +59,7 @@
         >
             Next
         </button>
+
         <button 
             onclick={() => goToPage(totalPages)} 
             disabled={currentPage === totalPages}
@@ -76,7 +78,7 @@
 
 <div class="card-grid">
     {#each paginatedVideos as video}
-    <!-- maybe use a serverless function to fetch video thumbnail from youtube link -->
+    <!-- embed youtube link into <video src> -->
         <VideoCard {...video}/>
     {/each}
 </div>
