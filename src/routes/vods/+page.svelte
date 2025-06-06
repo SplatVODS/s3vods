@@ -90,13 +90,13 @@
         font-size: 25px;
         font-family: monospace;
         background-color: var(--dull-white);
-        color: rgb(70, 70, 255);
+        color: var(--main-purple);
         width: 100%;
         max-width: 300px;
     }
 
     .search-bar::placeholder {
-        color: rgb(70, 70, 255);
+        color: var(--main-purple);
     }
 
     .search-bar:focus {
@@ -127,7 +127,7 @@
         border: none;
         border-radius: 5px;
         background-color: var(--dull-white);
-        color: rgb(70, 70, 255);
+        color: var(--main-purple);
         cursor: pointer;
         transition: all 0.3s ease-in-out;
         min-width: 80px;
@@ -139,7 +139,7 @@
     }
 
     .pagination button:hover:not(:disabled) {
-        background-color: rgb(70, 70, 255);
+        background-color: var(--main-purple);
         color: var(--dull-white);
     }
 
@@ -147,7 +147,7 @@
         background-color: var(--dull-white);
         border-radius: 5px;
         padding: 8px 16px;
-        color: rgb(70, 70, 255);
+        color: var(--main-purple);
         margin: 0 20px;
         cursor: default;
         text-align: center;
