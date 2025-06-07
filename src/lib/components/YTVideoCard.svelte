@@ -61,23 +61,18 @@
 		margin: 0 25px;
 		box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
 		border-radius: 20px;
-		transition: box-shadow 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
 	}
 
 	.card:hover {
 		box-shadow: rgba(70, 70, 255, 1) 0px 5px 50px;
+		transform: translateY(-10px);
 	}
-
-	/* .card-video {
-		color: black;
-		width: 100%;
-		border-radius: 20px 20px 0 0;
-	} */
 
 	.card-header-container {
 		display: flex;
 		flex-direction: column;
-		padding: 5% 0 5% 5%;
+		padding: 4% 0 4% 4%;
 		background-color: #f4f5f6;
 	}
 
@@ -104,7 +99,7 @@
 		flex-grow: 1;
 		justify-content: left;
 		border-radius: 0px 0px 20px 20px;
-		padding: 5% 0 5% 5%;
+		padding: 4% 0 4% 4%;
 		gap: 10px;
 		background-color: #e8e8e8;
 	}
