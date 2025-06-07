@@ -1,3 +1,8 @@
+# SplatVods
+* [GitHub Organization](https://github.com/SplatVODS)
+
+* [Development Repository (forked from GitHub Organization)](https://github.com/JO-wen-ster/s3vods)
+
 # sv
 
 Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
