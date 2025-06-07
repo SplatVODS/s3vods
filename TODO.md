@@ -28,15 +28,18 @@ EX
 
 Add a page on the site with a list of all the players who submitted
 
-Add a way to request recorder role (you are allowed to react to a message if you have th role to take on that recording job in the discord)
+Add a page on the site with a list of all the players who are supporting on patreon
 
-The site will die if I dont have scaling in place (pre banning players from discord, auto upload VODS (python script), get more uploaders)
+Add a way to request recorder role in discord (you are allowed to react to a message in the forum to take that certain upload if you have the role)
 
-Reach out to connections
+Add pre banned players to discord, get more uploaders
+
+Reach out to more connections
 
 Reach out to sendou for cross promotion (add sendou link to vods page)
 
-Setup discord moderation for banned players, not allow uploading
+Setup discord moderation (verification, rules, etc, VERY LIMITED channel permissions)
 
 Setup google drive account for sharing vods (folder per discord user)
 
+Create Bluesky, Twitter, Patreon accounts for the project
