@@ -1,7 +1,7 @@
 # SplatVods
 * [GitHub Organization](https://github.com/SplatVODS)
 
-* [Development Repository (forked from GitHub Organization)](https://github.com/JO-wen-ster/s3vods)
+* [Development Repository (forked from GitHub Organization)](https://github.com/JOwen-ster/s3vods)
 
 # sv
 
