@@ -1,3 +1,16 @@
+
+/*
+
+{    
+    video_id: "",
+    title: "",
+    player: "",
+    social_link: "",
+    tags: ["", ""],
+    url: "/SplatoonVodsIntro.mp4"
+},
+
+*/
 const rawVideos = [
     {
         video_id: "ZxxHfPM7NT8",
@@ -38,6 +51,14 @@ const rawVideos = [
         social_link: "https://example.com",
         tags: ["tower control", "advanced"],
         url: "/SplatoonVodsTowerControl.mp4"
+    },
+    {
+        video_id: "X7btgU9U9io",
+        title: "New Script Test",
+        player: "Typos",
+        social_link: "",
+        tags: ['splatoon', 'scrim', 'div1'],
+        url: "/2025-05-12 22-16-15.mp4"
     },
     {
         video_id: "ZxxHfPM7NT8",
