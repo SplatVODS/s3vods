@@ -45,7 +45,6 @@
 	}
 
 	.card-video {
-		color: black;
 		width: 100%;
 		border-radius: 20px 20px 0 0;
 	}
