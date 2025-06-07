@@ -1,6 +1,7 @@
 <script lang="ts">
     import processedVideos from "$lib/data/video_objects";
     import VideoCard from "$lib/components/VideoCard.svelte";
+    import YtVideoCard from "$lib/components/YTVideoCard.svelte";
     import { searchQuery } from "$lib/data/query_state.svelte";
     import Search from "$lib/components/Search.svelte";
 
@@ -68,7 +69,6 @@
         </button>
     </div>
 
-    <!-- <input type="search" class="search-bar" placeholder="Search VODS..." bind:value={searchQuery.value}/> -->
     <Search/>
 
     <span class="pagination-info">
@@ -79,36 +79,13 @@
 <div class="card-grid">
     {#each paginatedVideos as video}
     <!-- embed youtube link into <video src> -->
-        <VideoCard {...video}/>
+        <!-- <VideoCard {...video}/> -->
+        <YtVideoCard {...video}/>
     {/each}
 </div>
 
 <style>
     @import "$lib/styles/base.css";
-    /* .search-bar {
-        border: none;
-        border-radius: 25px;
-        padding: 10px 20px;
-        font-size: 25px;
-        font-family: monospace;
-        background-color: var(--dull-white);
-        color: var(--main-purple);
-        width: 100%;
-        max-width: 300px;
-    }
-
-    .search-bar::placeholder {
-        color: var(--main-purple);
-    }
-
-    .search-bar:focus {
-        outline: none
-    }
-
-    .search-bar:focus::placeholder {
-        color: transparent;
-    } */
-
     .pagination {
         display: flex;
         justify-content: center;
@@ -184,12 +161,6 @@
             width: 100%;
             max-width: 200px;
         }
-
-        /* .search-bar {
-            width: 100%;
-            max-width: none;
-            font-size: 20px;
-        } */
     }
 
     @media screen and (max-width: 600px) {
@@ -202,10 +173,5 @@
             font-size: 14px;
             min-width: 60px;
         }
-
-        /* .search-bar {
-            font-size: 16px;
-            padding: 8px 16px;
-        } */
     }
 </style>
