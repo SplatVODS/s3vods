@@ -1,115 +1,130 @@
 const rawVideos = [
     {
+        video_id: "ZxxHfPM7NT8",
         title: "In The Zone",
-        url: "/SplatoonVodsIntro.mp4",
         player: "Player",
         social_link: "https://example.com",
-        tags: ["pen", "top level"]
+        tags: ["pen", "top level"],
+        url: "/SplatoonVodsIntro.mp4"
     },
     {
+        video_id: "ZxxHfPM7NT8",
         title: "SendouQ Finals",
-        url: "/SplatoonVodsIntro.mp4",
         player: "Player",
         social_link: "https://example.com",
-        tags: ["slosher", "top level"]
+        tags: ["slosher", "top level"],
+        url: "/SplatoonVodsIntro.mp4"
     },
     {
+        video_id: "ZxxHfPM7NT8",
         title: "Area Cup",
-        url: "/SplatoonVodsIntro.mp4",
         player: "Player",
         social_link: "https://example.com",
-        tags: [".52 gal", "top level"]
+        tags: [".52 gal", "top level"],
+        url: "/SplatoonVodsIntro.mp4"
     },
     {
+        video_id: "ZxxHfPM7NT8",
         title: "Clam Blitz Battle",
-        url: "/SplatoonVodsClamBlitz.mp4",
         player: "Player",
         social_link: "https://example.com",
-        tags: ["clam blitz", "pro"]
+        tags: ["clam blitz", "pro"],
+        url: "/SplatoonVodsClamBlitz.mp4"
     },
     {
+        video_id: "ZxxHfPM7NT8",
         title: "Tower Control",
-        url: "/SplatoonVodsTowerControl.mp4",
         player: "Player",
         social_link: "https://example.com",
-        tags: ["tower control", "advanced"]
+        tags: ["tower control", "advanced"],
+        url: "/SplatoonVodsTowerControl.mp4"
     },
     {
+        video_id: "ZxxHfPM7NT8",
         title: "Splat Zones",
-        url: "/SplatoonVodsSplatZones.mp4",
         player: "Player",
         social_link: "https://example.com",
-        tags: ["splat zones", "expert"]
+        tags: ["splat zones", "expert"],
+        url: "/SplatoonVodsSplatZones.mp4"
     },
     {
+        video_id: "ZxxHfPM7NT8",
         title: "Rainmaker",
-        url: "/SplatoonVodsRainmaker.mp4",
         player: "Player",
         social_link: "https://example.com",
-        tags: ["rainmaker", "intermediate"]
+        tags: ["rainmaker", "intermediate"],
+        url: "/SplatoonVodsRainmaker.mp4"
     },
     {
+        video_id: "ZxxHfPM7NT8",
         title: "Turf War",
-        url: "/SplatoonVodsTurfWar.mp4",
         player: "Player",
         social_link: "https://example.com",
-        tags: ["turf war", "beginner"]
+        tags: ["turf war", "beginner"],
+        url: "/SplatoonVodsTurfWar.mp4"
     },
     {
+        video_id: "ZxxHfPM7NT8",
         title: "Salmon Run Sprint",
-        url: "/SplatoonVodsSalmonRun.mp4",
         player: "Player",
         social_link: "https://example.com",
-        tags: ["salmon run", "co-op"]
+        tags: ["salmon run", "co-op"],
+        url: "/SplatoonVodsSalmonRun.mp4"
     },
     {
+        video_id: "ZxxHfPM7NT8",
         title: "Octo Expansion Quest",
-        url: "/SplatoonVodsOctoExpansion.mp4",
         player: "Player",
         social_link: "https://example.com",
-        tags: ["octo expansion", "campaign"]
+        tags: ["octo expansion", "campaign"],
+        url: "/SplatoonVodsOctoExpansion.mp4"
     },
     {
+        video_id: "ZxxHfPM7NT8",
         title: "Hero Mode Mission",
-        url: "/SplatoonVodsHeroMode.mp4",
         player: "Player",
         social_link: "https://example.com",
-        tags: ["hero mode", "story"]
+        tags: ["hero mode", "story"],
+        url: "/SplatoonVodsHeroMode.mp4"
     },
     {
+        video_id: "ZxxHfPM7NT8",
         title: "Salmon Run Goldie",
-        url: "/SplatoonVodsSalmonRunGoldie.mp4",
         player: "Player",
         social_link: "https://example.com",
-        tags: ["salmon run", "co-op", "goldie"]
+        tags: ["salmon run", "co-op", "goldie"],
+        url: "/SplatoonVodsSalmonRunGoldie.mp4"
     },
     {
+        video_id: "ZxxHfPM7NT8",
         title: "Turf War Frenzy",
-        url: "/SplatoonVodsTurfWarFrenzy.mp4",
         player: "Player",
         social_link: "https://example.com",
-        tags: ["turf war", "frenzy"]
+        tags: ["turf war", "frenzy"],
+        url: "/SplatoonVodsTurfWarFrenzy.mp4"
     },
     {
+        video_id: "ZxxHfPM7NT8",
         title: "Splat Zones Blitz",
-        url: "/SplatoonVodsSplatZonesBlitz.mp4",
         player: "Player",
         social_link: "https://example.com",
-        tags: ["splat zones", "blitz"]
+        tags: ["splat zones", "blitz"],
+        url: "/SplatoonVodsSplatZonesBlitz.mp4"
     },
 ];
 
 
-// can possibly add youtube video id to card for easy search
-const processedVideos = rawVideos.map(({ title, url, player, tags }) => {
+const processedVideos = rawVideos.map(({ video_id, title, url, player, social_link, tags }) => {
     return {
+        video_id,
         title,
-        url,
         player,
+        social_link,
         tags,
         lowerTitle: title.toLowerCase(),
         lowerPlayer: player.toLowerCase(),
-        lowerTags: tags.map((tag) => tag.toLowerCase())
+        lowerTags: tags.map((tag) => tag.toLowerCase()),
+        url
     };
 });
 
