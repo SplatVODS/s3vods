@@ -78,7 +78,6 @@
 
 <div class="card-grid">
     {#each paginatedVideos as video}
-    <!-- embed youtube link into <video src> -->
         <!-- <VideoCard {...video}/> -->
         <YtVideoCard {...video}/>
     {/each}
