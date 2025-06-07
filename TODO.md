@@ -43,3 +43,5 @@ Setup discord moderation (verification, rules, etc, VERY LIMITED channel permiss
 Setup google drive account for sharing vods (folder per discord user)
 
 Create Bluesky, Twitter, Patreon accounts for the project
+
+Add feature videos to landing page (3-5 videos, 3 on top 2 on bottom)
