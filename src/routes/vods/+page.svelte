@@ -122,13 +122,15 @@
     }
 
     .pagination-info {
-        background-color: var(--dull-white);
+        background-color: transparent;
         border-radius: 5px;
         padding: 8px 16px;
         color: var(--main-purple);
         margin: 0 20px;
         cursor: default;
         text-align: center;
+        font-size: 20px;
+        font-weight: bold;
     }
 
     .card-grid {

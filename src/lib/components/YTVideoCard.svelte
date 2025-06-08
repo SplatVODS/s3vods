@@ -3,7 +3,7 @@
 		video_id = 'ZxxHfPM7NT8',
 		title = 'Title',
 		player = 'Player',
-		social_link = 'sendou.ink/u',
+		social_link = 'https://sendou.ink/u',
 		tags = ['tag1', 'tag2', 'tag3'],
 	} = $props();
 </script>
@@ -24,9 +24,12 @@
 	<div class="card-header-container">
 		<h3 class="card-title">{title}</h3>
 		<span>
-			<a class="card-player-name" href={social_link} target="_blank">
-				{player}
-			</a>
+			<a
+				class="card-player-name"
+				href={social_link}
+				target="_blank"
+				rel="noopener noreferrer"
+				title="Visit player’s social profile">{player}</a>
 		</span>
 	</div>
 
