@@ -13,6 +13,14 @@
 */
 const rawVideos = [
     {
+        video_id: "BkGzFA17CnE",
+        title: "Grey - Money Match 8s (150€ prize)",
+        player: "Grey",
+        social_link: "",
+        tags: ['top level', 's blast', 'div X', '8s'],
+        url: "/2025-06-07 20-06-22.mp4"
+    },
+    {
         video_id: "ZxxHfPM7NT8",
         title: "In The Zone",
         player: "Player",
