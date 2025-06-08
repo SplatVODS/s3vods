@@ -61,14 +61,6 @@ const rawVideos = [
         url: "/SplatoonVodsTowerControl.mp4"
     },
     {
-        video_id: "X7btgU9U9io",
-        title: "New Script Test",
-        player: "Typos",
-        social_link: "",
-        tags: ['splatoon', 'scrim', 'div1'],
-        url: "/2025-05-12 22-16-15.mp4"
-    },
-    {
         video_id: "ZxxHfPM7NT8",
         title: "Splat Zones",
         player: "Player",
