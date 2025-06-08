@@ -16,7 +16,7 @@ const rawVideos = [
         video_id: "BkGzFA17CnE",
         title: "Grey - Money Match 8s (150€ prize)",
         player: "Grey",
-        social_link: "",
+        social_link: "https://sendou.ink/u/grey",
         tags: ['top level', 's blast', 'div X', '8s'],
         url: "/2025-06-07 20-06-22.mp4"
     },
