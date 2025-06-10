@@ -13,6 +13,14 @@
 */
 const rawVideos = [
     {
+        video_id: "iuHye7yv78Q",
+        title: "Area Cup 35 - とある's 3700XP tetra pov",
+        player: "maedasatoshi - とある",
+        social_link: "https://www.youtube.com/@maedasatoshi-l2t",
+        tags: ['top level', 'tetra', 'area cup', '3700 xp', 'zones'],
+        url: "/SplatoonVodsIntro.mp4"
+    },
+    {
         video_id: "BkGzFA17CnE",
         title: "Grey - Money Match 8s (150€ prize)",
         player: "Grey",
