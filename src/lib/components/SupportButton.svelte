@@ -17,9 +17,7 @@
 				class="support-button"
 			>
 				<div class="button-content">
-					<span class="heart-icon">❤️</span>
-					<span class="button-text">Support Me</span>
-					<span class="heart-icon">❤️</span>
+					❤️<span class="button-text">Support Me!</span>❤️
 				</div>
 			</a>
 
@@ -90,8 +88,7 @@
 	}
 
 	.support-button:hover {
-        color: #1d1d1d;
-		transform: translateY(-5px);
+		transform: translateY(-8px);
 	}
 
 	.button-content {
@@ -99,15 +96,6 @@
 		display: flex;
 		align-items: center;
 		gap: 0.75rem;
-	}
-
-	.heart-icon {
-		font-size: 1.25rem;
-		transition: all 0.3s ease;
-	}
-
-	.support-button:hover .heart-icon {
-		animation: pulse 1s infinite;
 	}
 
 	.button-text {
@@ -119,36 +107,6 @@
 		color: #6b7280;
 		margin-top: 1rem;
 		margin-bottom: 0;
-	}
-
-	@keyframes pulse {
-		0%,
-		100% {
-			opacity: 1;
-		}
-		50% {
-			opacity: 0.5;
-		}
-	}
-
-	@keyframes bounce {
-		0%,
-		20%,
-		53%,
-		80%,
-		100% {
-			transform: translate3d(0, 0, 0);
-		}
-		40%,
-		43% {
-			transform: translate3d(0, -8px, 0);
-		}
-		70% {
-			transform: translate3d(0, -4px, 0);
-		}
-		90% {
-			transform: translate3d(0, -2px, 0);
-		}
 	}
 
 	/* Responsive design */
