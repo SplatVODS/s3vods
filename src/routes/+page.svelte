@@ -5,6 +5,7 @@
     import Search from "$lib/components/Search.svelte";
 	import SocialLinks from "$lib/components/SocialLinks.svelte";
     import RedirectButton from "$lib/components/RedirectButton.svelte";
+	import SupportButton from "$lib/components/SupportButton.svelte";
 </script>
 
 <div class="layout-container">
@@ -16,6 +17,8 @@
     <Search/>
 
     <SocialLinks/>
+
+    <SupportButton/>
 
     <p class="about" id="about">Hello, this web app was created to access Splatoon 3 VODS</p>
     <RedirectButton/>
