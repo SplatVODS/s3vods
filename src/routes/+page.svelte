@@ -5,6 +5,9 @@
     import Search from "$lib/components/Search.svelte";
 	import SocialLinks from "$lib/components/SocialLinks.svelte";
     import RedirectButton from "$lib/components/RedirectButton.svelte";
+	import InfoCard from "$lib/components/InfoCard.svelte";
+
+    let numv = 5;
 </script>
 
 <div class="layout-container">
@@ -12,10 +15,18 @@
 
     <Hero/>
 
-    <!-- Make the state not update unless the search button is clicked, use form POST request which triggers the filter function -->
     <Search/>
 
     <SocialLinks/>
+
+    <div style="margin-bottom: 50px;"></div>
+    <InfoCard
+    main_message='Want to keep this project'
+    highlight='✨ alive ✨'
+    button_link='https://ko-fi.com/typos1'
+    button_text='💖 Support Me! 💖'
+    sub_message='My Kofi'
+    />
 
     <p class="about" id="about">Hello, this web app was created to access Splatoon 3 VODS</p>
     <RedirectButton/>
@@ -34,6 +45,6 @@
     }
 
     .about {
-        padding: 800px 0 800px 0;
+        padding: 500px 0 500px 0;
     }
 </style>
