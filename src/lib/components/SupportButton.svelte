@@ -49,6 +49,7 @@
 		position: relative;
 		overflow: hidden;
         border-top: 3px solid var(--main-purple);
+        margin-top: 5rem;
 	}
 
 	.card-content {
