@@ -23,9 +23,9 @@
     <InfoCard
     main_message='Want to keep this project'
     highlight='✨ alive ✨'
-    button_link='https://ko-fi.com/typos1'
+    button_link='https://www.paypal.com/donate/?business=GNWVEK4K64F4Y&no_recurring=0&item_name=Donating+to+me+helps+ensure+I+keep+all+my+projects+maintained%21&currency_code=USD'
     button_text='💖 Support Me! 💖'
-    sub_message='My Kofi'
+    sub_message='My Paypal'
     />
 
     <p class="about" id="about">Hello, this web app was created to access Splatoon 3 VODS</p>
