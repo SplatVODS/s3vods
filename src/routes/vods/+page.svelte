@@ -147,9 +147,15 @@
         .card-grid {
             grid-template-columns: repeat(2, 1fr);
         }
+        .pagination {
+            flex-direction: column;
+        }
     }
 
     @media screen and (max-width: 768px) {
+        .card-grid {
+            grid-template-columns: 1fr;
+        }
         .pagination {
             gap: 20px;
         }
@@ -168,10 +174,6 @@
     }
 
     @media screen and (max-width: 600px) {
-        .card-grid {
-            grid-template-columns: 1fr;
-        }
-
         .pagination button {
             padding: 6px 12px;
             font-size: 14px;
