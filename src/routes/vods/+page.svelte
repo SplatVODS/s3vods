@@ -156,6 +156,7 @@
         .card-grid {
             grid-template-columns: 1fr;
         }
+
         .pagination {
             gap: 20px;
         }
