@@ -1,6 +1,5 @@
 <script lang="ts">
     import processedVideos from "$lib/data/video_objects";
-    import VideoCard from "$lib/components/VideoCard.svelte";
     import YtVideoCard from "$lib/components/YTVideoCard.svelte";
     import { searchQuery } from "$lib/data/query_state.svelte";
     import Search from "$lib/components/Search.svelte";
@@ -40,7 +39,8 @@
 
 <div class="pagination">
     <div class="pagination-controls">
-        <button 
+        <div class="group-order">
+            <button 
             onclick={() => goToPage(1)} 
             disabled={currentPage === 1}
         >
@@ -51,15 +51,18 @@
             onclick={() => goToPage(currentPage - 1)} 
             disabled={currentPage === 1}
         >
-            Previous 
+            Previous
         </button>
+        </div>
 
-        <button 
+        <Search/>
+
+        <div class="group-order">
+            <button 
             onclick={() => goToPage(currentPage + 1)} 
-            disabled={currentPage === totalPages}
-        >
+            disabled={currentPage === totalPages}>
             Next
-        </button>
+            </button>
 
         <button 
             onclick={() => goToPage(totalPages)} 
@@ -67,9 +70,9 @@
         >
             Last
         </button>
-    </div>
 
-    <Search/>
+        </div>
+    </div>
 
     <span class="pagination-info">
         Page {currentPage} of {totalPages}
@@ -148,11 +151,11 @@
 
     @media screen and (max-width: 768px) {
         .pagination {
-            flex-direction: column;
             gap: 20px;
         }
 
         .pagination-controls {
+            flex-direction: column;
             width: 100%;
             justify-content: center;
         }
