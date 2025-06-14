@@ -11,7 +11,6 @@
         font-weight: 600;
         font-family: sans-serif;
         color: #1d1d1d;
-        margin-top: 5rem;
     }
 
     span {
