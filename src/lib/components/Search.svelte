@@ -10,6 +10,12 @@
             goto('/vods');
         }
     }
+
+    function handleEnterKeySearch(event: KeyboardEvent) {
+        if (event.key === 'Enter') {
+            handleSearch();
+        }
+    }
 </script>
 
 <div class="searchbar-container">
@@ -17,6 +23,7 @@
         type="text"
         placeholder="Search VODS..."
         bind:value={currentQuery.value}
+        on:keydown={handleEnterKeySearch}
         class="searchbar"
     />
     <button class="svg-button" aria-label="submit-search" on:click={handleSearch}>

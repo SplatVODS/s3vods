@@ -4,16 +4,24 @@
     import { searchQuery } from "$lib/data/query_state.svelte";
     import Search from "$lib/components/Search.svelte";
 
-
     let currentPage: number = $state(1);
     const itemsPerPage: number = 6; // Changed to 6 items per page by default
 
-    let filtered_videos = $derived(processedVideos.filter(
-        ({ lowerTitle, lowerPlayer, lowerTags }) =>
-            lowerTitle.includes(searchQuery.value.toLowerCase()) ||
-            lowerPlayer.includes(searchQuery.value.toLowerCase()) ||
-            lowerTags.some((tag) => tag.includes(searchQuery.value.toLowerCase()))
-    ));
+    function cleanInput(str: string): string {
+        return str.toLowerCase().replace(/[\s_-]/g, '');
+    }
+
+    let filtered_videos = $derived(
+        processedVideos.filter(({ lowerTitle, lowerPlayer, lowerTags }) => {
+            const cleanedQuery = cleanInput(searchQuery.value);
+
+            return (
+                cleanInput(lowerTitle).includes(cleanedQuery) ||
+                cleanInput(lowerPlayer).includes(cleanedQuery) ||
+                lowerTags.some(tag => cleanInput(tag).includes(cleanedQuery))
+            );
+        })
+    );
 
     let totalPages = $derived(Math.ceil(filtered_videos.length / itemsPerPage));
     let paginatedVideos = $derived(
