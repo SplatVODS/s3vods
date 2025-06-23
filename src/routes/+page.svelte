@@ -4,6 +4,8 @@
 	import SocialLinks from "$lib/components/SocialLinks.svelte";
     import RedirectButton from "$lib/components/RedirectButton.svelte";
 	import InfoCard from "$lib/components/InfoCard.svelte";
+	import Arrow from "$lib/components/Arrow.svelte";
+	import InfoSection from "$lib/components/InfoSection.svelte";
     let spacerAmount = 50;
 </script>
 
@@ -12,7 +14,6 @@
 <Search/>
 
 <SocialLinks/>
-<!-- add to info card component -->
 <div style="margin-bottom: {spacerAmount}px;"></div>
 
 <InfoCard
@@ -23,12 +24,12 @@
     sub_message='My Paypal'
 />
 
-<p class="about" id="about">Hello, this web app was created to access Splatoon 3 VODS</p>
+<Arrow/>
+
+<InfoSection/>
 
 <RedirectButton/>
 
-<style> 
-    .about {
-        padding: 500px 0 500px 0;
-    }
+<style>
+
 </style>

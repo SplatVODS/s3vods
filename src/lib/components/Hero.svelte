@@ -2,10 +2,16 @@
     
 </script>
 
+<div class="hero-container">
+    <span>Search and Watch</span>
+    <span class="purple">Splatoon VODS</span>
+</div>
+
 <style>
     .hero-container{
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
         font-size: 70px;
         font-weight: 600;
@@ -13,12 +19,7 @@
         color: #1d1d1d;
     }
 
-    span {
-        text-align: center;
+    span.purple {
+        color: var(--main-purple);
     }
 </style>
-
-<div class="hero-container">
-    <span>Search and Watch</span>
-    <span style="color: rgb(70, 70, 255);">Splatoon VODS</span>
-</div>
