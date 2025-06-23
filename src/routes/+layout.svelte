@@ -15,7 +15,7 @@
         display: flex;
         flex-wrap: nowrap;
         flex-direction: column;
-        justify-content: flex-start; /* ??? */
+        justify-content: flex-start;
         align-items: center;
         height: 100dvh;
         width: 100%;
