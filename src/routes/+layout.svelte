@@ -13,6 +13,7 @@
 <style>
     .layout-container {
         display: flex;
+        flex-wrap: nowrap;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
@@ -20,8 +21,5 @@
         width: 100%;
         margin: 0;
         padding: 0;
-    }
-    div {
-        color: red;
     }
 </style>

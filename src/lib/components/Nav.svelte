@@ -32,7 +32,7 @@
 		<nav>
 			<ul class="nav-list">
 				<li><a href="/" class="nav-link">Home</a></li>
-				<li><a href="/#about" class="nav-link">About</a></li>
+				<!-- <li><a href="/#about" class="nav-link">About</a></li> -->
 				<li><a href="/vods" class="nav-link">Vods</a></li>
 			</ul>
 		</nav>
