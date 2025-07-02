@@ -1,5 +1,6 @@
 <script lang="ts">
 	import DescriptionCard from './DescriptionCard.svelte';
+	import RedirectButton from './RedirectButton.svelte';
 
 	// Send Replays (Send us your replay code(s) OR a link to a published youtube video!)
 	// We Record It (We will use our capture cards to record your replays so you do not need any setup!)
