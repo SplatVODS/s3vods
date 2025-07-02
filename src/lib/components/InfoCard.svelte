@@ -23,6 +23,7 @@
 </div>
 
 <style>
+    /* make width dynamic to content langth either dont include the attr or make it responsive */
     .info-container {
         display: flex;
         flex-direction: column;

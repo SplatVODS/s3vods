@@ -18,7 +18,7 @@
 
 <InfoCard
     main_message='Want to keep this project'
-    highlight='✨ alive ✨'
+    highlight='✨alive✨'
     button_link='https://paypal.me/typos1?country.x=US&locale.x=en_US'
     button_text='💖 Support Me! 💖'
     sub_message='My Paypal'

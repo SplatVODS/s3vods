@@ -13,6 +13,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
         font-size: 70px;
         font-weight: 600;
         font-family: sans-serif;
