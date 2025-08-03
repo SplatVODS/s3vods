@@ -45,6 +45,10 @@
     });
 </script>
 
+<svelte:head>
+    <title>Splat Vods - Vods</title>
+</svelte:head>
+
 <div class="pagination">
     <div class="pagination-controls">
         <div class="group-order">
