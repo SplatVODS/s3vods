@@ -6,7 +6,6 @@
 	import InfoSection from "$lib/components/InfoSection.svelte";
 	import SupportCard from "$lib/components/SupportCard.svelte";
 	import RedirectButton from "$lib/components/RedirectButton.svelte";
-    let spacerAmount = 50;
 </script>
 
 <Hero/>
@@ -14,7 +13,6 @@
 <Search/>
 
 <SocialLinks/>
-<div style="margin-bottom: {spacerAmount}px;"></div>
 
 <SupportCard
     main_message='Want to keep this project'

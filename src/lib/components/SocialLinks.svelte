@@ -39,7 +39,7 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
-		margin: 1rem;
+		margin: 1rem 0 3rem 0;
 	}
 
 	.social-link {
@@ -50,7 +50,7 @@
 
 	.social-link:hover {
 		color: #5146f5;
-		transform: scale(1.1);
+		transform: scale(1.20);
 	}
 
 	.social-icon {
