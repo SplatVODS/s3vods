@@ -99,7 +99,6 @@
 	.card-tag-container {
 		display: flex;
 		flex-wrap: wrap;
-		flex-grow: 1;
 		justify-content: left;
 		border-radius: 0px 0px 20px 20px;
 		padding: 4% 0 4% 4%;
