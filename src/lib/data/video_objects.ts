@@ -1,7 +1,7 @@
 
 /*
 
-{    
+{
     video_id: "",
     title: "",
     player: "",
@@ -36,7 +36,15 @@ const rawVideos = [
         tags: ['top level', 's blast', '4900 xp', 'jp'],
         url: "https://www.youtube.com/watch?v=kNtbV8KpfnY"
     },
-    
+    {
+        video_id: "Z20d3vrI4EA",
+        title: "Splat World Series Finals - Utopia",
+        player: "Kyamii",
+        social_link: "https://x.com/kylxqi",
+        tags: ['top level', 'slosher', '3713 xp', 'jp'],
+        url: "https://www.youtube.com/watch?v=Z20d3vrI4EA"
+    },
+
 ];
 
 
