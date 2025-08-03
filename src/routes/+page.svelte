@@ -8,6 +8,10 @@
 	import RedirectButton from "$lib/components/RedirectButton.svelte";
 </script>
 
+<svelte:head>
+    <title>Splat Vods - Home</title>
+</svelte:head>
+
 <Hero/>
 
 <Search/>

@@ -3,6 +3,10 @@
     import supporters from '$lib/data/supporters';
 </script>
 
+<svelte:head>
+    <title>Splat Vods - Community</title>
+</svelte:head>
+
 <div class="display">
     <ul>
         {#each supporters as s_name}
