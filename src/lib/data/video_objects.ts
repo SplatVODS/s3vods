@@ -7,7 +7,7 @@
     player: "",
     social_link: "",
     tags: ["", ""],
-    url: "/SplatoonVodsIntro.mp4"
+    url: ""
 },
 
 */
@@ -16,17 +16,25 @@ const rawVideos = [
         video_id: "iuHye7yv78Q",
         title: "Area Cup 35 - とある's 3700XP tetra pov",
         player: "maedasatoshi - とある",
-        social_link: "https://www.youtube.com/@maedasatoshi-l2t",
-        tags: ['top level', 'tetra', 'area cup', '3700 xp', 'zones'],
-        url: "/SplatoonVodsIntro.mp4"
+        social_link: "https://www.youtube.com/channel/UC3LfL8bHRRVL7Q0KHyTwuYw",
+        tags: ['top level', 'tetra', 'area cup', '3700 xp', 'zones', 'jp'],
+        url: "https://www.youtube.com/watch?v=iuHye7yv78Q"
     },
     {
         video_id: "BkGzFA17CnE",
         title: "Grey - Money Match 8s (150€ prize)",
         player: "Grey",
         social_link: "https://sendou.ink/u/grey",
-        tags: ['top level', 's blast', 'div X', '8s'],
-        url: "/2025-06-07 20-06-22.mp4"
+        tags: ['top level', 's blast', 'div X', '8s', 'eu'],
+        url: ""
+    },
+    {
+        video_id: "kNtbV8KpfnY",
+        title: "Splat World Series Finals - The Invincible Fleet Rei Maru",
+        player: "Lobstar",
+        social_link: "https://x.com/tt_Iv_",
+        tags: ['top level', 's blast', '4900 xp', 'jp'],
+        url: "https://www.youtube.com/watch?v=kNtbV8KpfnY"
     },
     
 ];
