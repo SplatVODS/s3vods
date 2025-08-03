@@ -1,6 +1,6 @@
 # TODO List
 
-Add how it works section on landing page
+ADD TWITCH EMBED SUPPORT
 
 Update font for pagination buttons to sans-serif
 
@@ -21,5 +21,3 @@ Setup discord moderation (verification, rules, etc, VERY LIMITED channel permiss
 Setup google drive account for sharing vods (folder per discord user)
 
 Create Bluesky, Twitter
-
-Add feature videos (Called Creators Picks) to landing page (3-5 videos, 3 on top 2 on bottom)

@@ -31,7 +31,7 @@
         align-items: center;
         width: 25%;
         border-radius: 20px;
-        border-top: 3px solid #494efd;;
+        border-top: 3px solid var(--main-purple);
         box-shadow:
 			0 10px 15px -3px rgba(0, 0, 0, 0.1),
 			0 4px 6px -2px rgba(0, 0, 0, 0.05);
@@ -43,7 +43,7 @@
     }
 
     .highlight-text {
-        color: #494efd;
+        color: var(--main-purple);
     }
 
     .info-button {
@@ -61,7 +61,7 @@
 			0 4px 6px -2px rgba(0, 0, 0, 0.05);
 		text-decoration: none;
 		transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-		overflow: hidden;
+        margin: 10px
 	}
 
 	.info-button:hover {
@@ -83,9 +83,9 @@
         color: grey;
     }
 
-    @media (max-width: 962px) {
+    /* @media (max-width: 962px) {
         .info-container {
             width: 50%;
         }
-	}
+	} */
 </style>

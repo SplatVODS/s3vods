@@ -23,5 +23,6 @@
 
     .redirect-button-style:hover {
         background-color: rgb(35, 35, 160);
+        scale: 1.1;
     }
 </style>

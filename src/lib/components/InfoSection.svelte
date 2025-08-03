@@ -13,7 +13,7 @@
 
 	<div class="descriptions">
 		<DescriptionCard
-			header="Send Replays"
+			header="You Send Replays"
 			description="Send us your replay code(s) OR a link to a published youtube video!"
 			svg_path="/replay.svg"
 		/>

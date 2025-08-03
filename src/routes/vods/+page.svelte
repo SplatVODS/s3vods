@@ -87,11 +87,13 @@
     </span>
 </div>
 
-<div class="card-grid">
-    {#each paginatedVideos as video}
-        <!-- <VideoCard {...video}/> -->
-        <YtVideoCard {...video}/>
-    {/each}
+<div class="grid-wrapper">
+    <div class="card-grid">
+        {#each paginatedVideos as video}
+            <!-- <VideoCard {...video}/> -->
+            <YtVideoCard {...video}/>
+        {/each}
+    </div>
 </div>
 
 <style>
@@ -144,10 +146,17 @@
         font-weight: bold;
     }
 
+    .grid-wrapper {
+        flex: 1; /* Takes remaining space after nav */
+        width: 90%;
+        padding-bottom: 25px;
+        overflow-y: visible; /* Allow scrolling if needed */
+    }
+
     .card-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
+        gap: 10px;
         align-items: start;
     }
 
