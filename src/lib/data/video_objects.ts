@@ -15,7 +15,7 @@ const rawVideos = [
     {
         video_id: "iuHye7yv78Q",
         title: "Area Cup 35 - とある's 3700XP tetra pov",
-        player: "maedasatoshi - とある",
+        player: "Maedasatoshi - とある",
         social_link: "https://www.youtube.com/channel/UC3LfL8bHRRVL7Q0KHyTwuYw",
         tags: ['top level', 'tetra', 'area cup', '3700 xp', 'zones', 'jp'],
         url: "https://www.youtube.com/watch?v=iuHye7yv78Q"
@@ -44,6 +44,23 @@ const rawVideos = [
         tags: ['top level', 'slosher', '3713 xp', 'jp'],
         url: "https://www.youtube.com/watch?v=Z20d3vrI4EA"
     },
+    {
+        video_id: "gRXKgd-7FGs",
+        title: "Splat World Series Finals - The Invincible Fleet Rei Maru",
+        player: "Garandou (Grand Roll)",
+        social_link: "https://x.com/Grand_Roll",
+        tags: ["top level", "dread", "4013 xp", 'jp'],
+        url: "https://www.youtube.com/watch?v=gRXKgd-7FGs"
+    },
+    {
+        video_id: "EDaJkWFs-AA",
+        title: "Splat World Series Finals - False Dream",
+        player: "Shuman",
+        social_link: "https://x.com/08Shuman",
+        tags: ["top level", "splash", "3809 xp", 'jp'],
+        url: "https://www.youtube.com/watch?v=EDaJkWFs-AA"
+    },
+
 
 ];
 
