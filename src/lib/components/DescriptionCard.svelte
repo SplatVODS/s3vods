@@ -33,7 +33,7 @@
 				width: 2.5rem;
     }
 
-    h1, h2 {
+    h2 {
         color: var(--dull-black);
         margin: 0;
     }
