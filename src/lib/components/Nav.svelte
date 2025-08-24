@@ -37,7 +37,6 @@
 		</nav>
 	</div>
 </header>
-<div style="margin-bottom: 4rem;"></div>
 
 <style>
 	.header {
@@ -46,11 +45,11 @@
 		width: 100%;
 		z-index: 1000;
 		transition: all 0.3s ease;
-			background-color: var(--background);
+		background-color: var(--background);
 	}
 
 	.header.scrolled {
-		box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+		box-shadow: var(--box-shadow) 0px 5px 15px;
 	}
 
     .scrolled-text {
