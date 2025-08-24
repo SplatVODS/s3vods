@@ -43,13 +43,13 @@
 	}
 
 	.social-link {
-		color: #4b5563;
+		color: var(--text-secondary);
 		margin: 0 1rem;
 		transition: all 0.3s ease;
 	}
 
 	.social-link:hover {
-		color: #5146f5;
+		color: var(--main-purple);
 		transform: scale(1.20);
 	}
 

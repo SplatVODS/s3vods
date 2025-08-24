@@ -32,12 +32,11 @@
 		<nav>
 			<ul class="nav-list">
 				<li><a href="/" class="nav-link">Home</a></li>
-				<li><a href="/vods" class="nav-link">Vods</a></li>
+				<li><a href="/vods"  class="nav-link">Vods</a></li>
 			</ul>
 		</nav>
 	</div>
 </header>
-<div style="margin-bottom: 4rem;"></div>
 
 <style>
 	.header {
@@ -46,15 +45,15 @@
 		width: 100%;
 		z-index: 1000;
 		transition: all 0.3s ease;
-		background-color: white;
+		background-color: var(--background);
 	}
 
 	.header.scrolled {
-		box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+		box-shadow: var(--box-shadow) 0px 5px 15px;
 	}
 
     .scrolled-text {
-        color: #5353fd;
+        color: var(--main-purple);
     }
 
 	.container {
@@ -74,14 +73,14 @@
 	.brand-link {
 		font-size: 1.5rem;
 		font-weight: bold;
-		color: #5353fd; /* primary-500 */
+		color: var(--main-purple); /* primary-500 */
 		display: flex;
 		align-items: center;
 		text-decoration: none;
 	}
 
 	span {
-		color: black;
+		color: var(--text-primary);
 		transition: all 0.3s ease;
 		font-family: sans-serif;
 		font-weight: 800;
@@ -98,12 +97,12 @@
 	.nav-link {
 		font-family: sans-serif;
 		font-weight: 600;
-		color: black;
+		color: var(--text-primary);
 		text-decoration: none;
 		transition: color 0.3s ease;
 	}
 
 	.nav-link:hover {
-		color: #5353fd;
+		color: var(--main-purple);
 	}
 </style>

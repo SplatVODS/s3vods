@@ -1,8 +1,12 @@
 <script lang="ts">
     import processedVideos from "$lib/data/video_objects";
     import YtVideoCard from "$lib/components/YTVideoCard.svelte";
-    import { searchQuery } from "$lib/data/query_state.svelte";
+		import { currentQuery, searchQuery } from '$lib/data/query_state.svelte';
     import Search from "$lib/components/Search.svelte";
+		import RedirectButton from '$lib/components/RedirectButton.svelte';
+		import { MediaQuery } from 'svelte/reactivity';
+
+		const screen_size_small = new MediaQuery('max-width: 768px');
 
     let currentPage: number = $state(1);
     const itemsPerPage: number = 6; // Changed to 6 items per page by default
@@ -50,26 +54,25 @@
 </svelte:head>
 
 <div class="pagination">
+	{#if screen_size_small.current}
     <div class="pagination-controls">
-        <div class="group-order">
-            <button 
-            onclick={() => goToPage(1)} 
-            disabled={currentPage === 1}
-        >
-            First
-        </button>
-
-        <button 
-            onclick={() => goToPage(currentPage - 1)} 
-            disabled={currentPage === 1}
-        >
-            Previous
-        </button>
-        </div>
 
         <Search/>
 
         <div class="group-order">
+					<button
+						onclick={() => goToPage(1)}
+						disabled={currentPage === 1}
+					>
+						First
+					</button>
+
+					<button
+						onclick={() => goToPage(currentPage - 1)}
+						disabled={currentPage === 1}
+					>
+						Previous
+					</button>
             <button 
             onclick={() => goToPage(currentPage + 1)} 
             disabled={currentPage === totalPages}>
@@ -85,28 +88,71 @@
 
         </div>
     </div>
+		{:else}
+		<div class="pagination-controls">
+			<div class="group-order">
+				<button
+					onclick={() => goToPage(1)}
+					disabled={currentPage === 1}
+				>
+					First
+				</button>
+
+				<button
+					onclick={() => goToPage(currentPage - 1)}
+					disabled={currentPage === 1}
+				>
+					Previous
+				</button>
+			</div>
+
+			<Search/>
+
+			<div class="group-order">
+				<button
+					onclick={() => goToPage(currentPage + 1)}
+					disabled={currentPage === totalPages}>
+					Next
+				</button>
+
+				<button
+					onclick={() => goToPage(totalPages)}
+					disabled={currentPage === totalPages}
+				>
+					Last
+				</button>
+
+			</div>
+		</div>
+		{/if}
 
     <span class="pagination-info">
         Page {currentPage} of {totalPages}
     </span>
-</div>
 
+
+</div>
+{#if paginatedVideos.length < 1}
+	<h2>No VODs match your search, please try again!</h2>
+	{:else}
 <div class="card-grid">
     {#each paginatedVideos as video}
         <!-- <VideoCard {...video}/> -->
         <YtVideoCard {...video}/>
     {/each}
+
 </div>
+{/if}
 
 <style>
-    @import "$lib/styles/base.css";
+    @import "$lib/styles/colors.css";
     .pagination {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 10px;
-        padding: 25px 0;
+        padding: 25px 0 0 0;
         flex-wrap: wrap;
+				margin-bottom: 20px;
     }
 
     .pagination-controls {
@@ -139,7 +185,6 @@
     .pagination-info {
         background-color: transparent;
         border-radius: 5px;
-        padding: 8px 16px;
         color: var(--main-purple);
         margin: 0 20px;
         cursor: default;
@@ -174,6 +219,7 @@
 
         .pagination {
             gap: 20px;
+            margin-bottom: none;
         }
 
         .pagination-controls {
