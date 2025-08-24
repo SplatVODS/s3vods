@@ -1,6 +1,4 @@
 <script>
-	import { searchQuery, currentQuery } from '$lib/data/query_state.svelte.js';
-
 	let {
 		video_id = 'ZxxHfPM7NT8',
 		title = 'Title',
@@ -35,7 +33,7 @@
 
 	<div class="card-tag-container">
 		{#each tags as tag}
-			<a class="card-tag" aria-role="search tag button" onclick={() => {searchQuery.value = tag, currentQuery.value = tag}}>{tag}</a>
+			<span class="card-tag">{tag}</span>
 		{/each}
 	</div>
 </div>
@@ -113,11 +111,12 @@
 		font-weight: bold;
 		font-family: monospace;
 			transition: all 0.2s ease-in-out;
+		cursor: default;
 	}
 
 	.card-tag:hover {
 			color: var(--background);
 			background-color: var(--hover-blue);
-			transform: translateY(-2px);
+			transform: translateY(-3px);
 	}
 </style>
