@@ -1,8 +1,25 @@
-@import "./base.css";
+@import "colors.css";
 
 body, html {
     height: 100%;
-    background: white;
+    background: var(--background);
     margin: 0;
     padding: 0;
 }
+
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 2.5rem;
+}
+
+@media (max-width: 800px) {
+    h1 {
+        font-size: 2.7rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+}
+

@@ -1,0 +1,33 @@
+:root {
+    --dull-white: #f4f5f6;
+    --text-primary: #1d1d1d;
+    --text-secondary: rgba(61, 61, 61, 0.62);
+    --text-accent: rgba(87, 88, 178, 0.99);
+    --hover-blue: rgba(83, 83, 253, 0.76);
+    --surface: rgba(224, 224, 224, 0.83);
+    --surface-light: #ededee;
+    --dull-black: #0d0d0d;
+    --main-purple: #5353fd;
+    --redirect-button-hover: rgb(35, 35, 160);
+    --background : #FFFFFF;
+    --background-accent: #e0e1ff;
+    --box-shadow: rgba(0, 0, 0, 0.05);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --dull-white: #000000;
+        --text-primary: rgb(255, 255, 255);
+        --text-secondary: #c2c2c2;
+        --text-accent: rgba(111, 112, 204, 0.99);
+        --hover-blue: rgba(180, 181, 238, 0.93);
+        --surface: rgba(42, 42, 56, 0.47);
+        --surface-light: rgba(42, 42, 56, 0.28);
+        --dull-black: #e7e7e7;
+        --main-purple: rgb(136, 136, 255);
+        --background-accent: rgba(146, 156, 255, 0.37);
+        --redirect-button-hover: rgb(94, 94, 239);
+        --background : #15151a;
+        --box-shadow: rgba(255, 255, 255, 0.17);
+    }
+}

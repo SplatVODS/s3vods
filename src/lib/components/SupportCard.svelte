@@ -29,16 +29,16 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 25%;
+        width: 18rem;
         border-radius: 20px;
         border-top: 3px solid var(--main-purple);
         box-shadow:
-			0 10px 15px -3px rgba(0, 0, 0, 0.1),
-			0 4px 6px -2px rgba(0, 0, 0, 0.05);
+			0 10px 15px -3px var(--box-shadow),
+			0 4px 6px -2px var(--box-shadow);
     }
 
     .main-text {
-        color: #1d1d1d;
+        color: var(--text-primary);
         text-align: center;
     }
 
@@ -57,8 +57,8 @@
 		font-weight: 600;
 		border-radius: 500px;
 		box-shadow:
-			0 10px 15px -3px rgba(0, 0, 0, 0.1),
-			0 4px 6px -2px rgba(0, 0, 0, 0.05);
+			0 10px 15px -3px var(--box-shadow),
+			0 4px 6px -2px var(--box-shadow);
 		text-decoration: none;
 		transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         margin: 10px

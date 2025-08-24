@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d8cc1f64-a0eb-4821-b266-2e41dd35964c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/lib/icons/camera.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/icons/host.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/icons/replay.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/icons/search.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/+layout.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/DescriptionCard.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/DescriptionCard.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/Hero.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Hero.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/InfoSection.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/InfoSection.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/Nav.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Nav.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/RedirectButton.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/RedirectButton.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/Search.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Search.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/SocialLinks.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/SocialLinks.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/SupportCard.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/SupportCard.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/YTVideoCard.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/YTVideoCard.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/data/query_state.svelte.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/data/query_state.svelte.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/styles/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/styles/colors.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/styles/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/styles/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/vods/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/vods/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/favicon.png" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Theme" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="31hYldbLgsMSq01ITJPdmdCwHBX" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showScratchesAndConsoles" value="false" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "last_opened_file_path": "/home/li/Documents/github/s3vods/static",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/home/li/Documents/github/s3vods/node_modules/prettier",
+    "ts.external.directory.path": "/home/li/Documents/github/s3vods/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RdControllerToolWindowsLayoutState" isNewUi="true">
+    <layout>
+      <window_info id="Bookmarks" side_tool="true" />
+      <window_info id="Merge Requests" />
+      <window_info id="Backup and Sync History" />
+      <window_info id="npm" side_tool="true" />
+      <window_info id="Commit_Guest" show_stripe_button="false" />
+      <window_info id="Pull Requests" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16640624" />
+      <window_info id="Commit" order="1" weight="0.25" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="TypeScript" />
+      <window_info anchor="bottom" id="GitHub Copilot MCP Log" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TODO" />
+      <window_info anchor="bottom" id="File Transfer" />
+      <window_info anchor="bottom" id="Find" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.14784482" />
+      <window_info anchor="bottom" id="Services" order="4" />
+      <window_info anchor="right" id="Endpoints" />
+      <window_info anchor="right" id="Coverage" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.25" />
+      <window_info anchor="right" id="Database" order="2" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+      <window_info anchor="right" id="github.copilotToolWindow" order="5" />
+      <window_info anchor="right" id="GitHub Copilot Chat" order="6" />
+    </layout>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static" />
+      <recent name="$PROJECT_DIR$/src/lib/styles" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/lib/icons" />
+      <recent name="$PROJECT_DIR$/static" />
+      <recent name="$PROJECT_DIR$/camera" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-e03c56caf84a-JavaScript-WS-252.23892.361" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d8cc1f64-a0eb-4821-b266-2e41dd35964c" name="Changes" comment="" />
+      <created>1755977924954</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1755977924954</updated>
+      <workItem from="1755977927771" duration="14269000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
