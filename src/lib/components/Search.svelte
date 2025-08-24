@@ -21,7 +21,7 @@
 <div class="searchbar-container">
     <input
         type="text"
-        placeholder="Search tournaments, weapons, regions..."
+        placeholder="Search tourneys, weapons, or players"
         bind:value={currentQuery.value}
         on:keydown={handleEnterKeySearch}
         class="searchbar"
