@@ -10,7 +10,7 @@
 <div class="card">
     <!-- https://fonts.google.com/icons -->
     <img src="{svg_path}" alt="Card Icon">
-    <h1>{header}</h1>
+    <h2>{header}</h2>
     <p>{description}</p>
 </div>
 
@@ -19,8 +19,9 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+				padding: 0.2rem;
         align-items: center;
-        background-color: white;
+        background-color: var(--background);
         margin-bottom: 30px;
         border-radius: 25px;
         box-shadow:
@@ -29,9 +30,10 @@
 
     img {
         margin: 25px 0;
+				width: 2.5rem;
     }
 
-    h1 {
+    h1, h2 {
         color: var(--dull-black);
         margin: 0;
     }

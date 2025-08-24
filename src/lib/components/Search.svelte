@@ -21,7 +21,7 @@
 <div class="searchbar-container">
     <input
         type="text"
-        placeholder="Search VODS..."
+        placeholder="Search tournaments, weapons, regions..."
         bind:value={currentQuery.value}
         on:keydown={handleEnterKeySearch}
         class="searchbar"
@@ -37,19 +37,26 @@
         align-items: center;
         background-color: transparent;
         border-radius: 25px;
-        border: 3px solid #4646ff;
+        border: 3px solid var(--main-purple);
     }
 
+		::placeholder {
+				color: var(--text-secondary);
+		}
+		input {
+				color: var(--text-primary);
+		}
     .searchbar {
         outline: none;
         padding: 20px;
         background: transparent;
         border-radius: 25px;
+				width: 15rem;
         border: none;
     }
 
     .svg-button {
-        background-color: #4646ff;
+        background-color: var(--main-purple);
         border: none;
         width: 40px;
         height: 40px;
@@ -64,6 +71,7 @@
 
     .svg-button:hover {
         transform: scale(1.1);
-        background-color: #3535ff;
+        background-color: var(--main-purple);
     }
+
 </style>

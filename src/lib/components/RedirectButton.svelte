@@ -22,7 +22,7 @@
     }
 
     .redirect-button-style:hover {
-        background-color: rgb(35, 35, 160);
+        background-color: var(--redirect-button-hover);
         scale: 1.1;
     }
 </style>

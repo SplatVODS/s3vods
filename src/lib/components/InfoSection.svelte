@@ -1,6 +1,11 @@
 <script lang="ts">
 	import DescriptionCard from './DescriptionCard.svelte';
 	import RedirectButton from './RedirectButton.svelte';
+	import replay_icon from '$lib/icons/replay.svg'
+	import host_icon from '$lib/icons/host.svg'
+	import search_icon from '$lib/icons/search.svg'
+	import camera_icon from '$lib/icons/camera.svg'
+
 
 	// Send Replays (Send us your replay code(s) OR a link to a published youtube video!)
 	// We Record It (We will use our capture cards to record your replays so you do not need any setup!)
@@ -13,46 +18,53 @@
 
 	<div class="descriptions">
 		<DescriptionCard
-			header="You Send Replays"
-			description="Send us your replay code(s) OR a link to a published youtube video!"
-			svg_path="/replay.svg"
+			header="1. Send a replay"
+			description="High level players send us replay codes OR a link to a published youtube video!"
+			svg_path={replay_icon}
 		/>
 
 		<DescriptionCard
-			header="We Record It"
-			description="We will use our capture cards to record your replays so you do not need any setup!"
-			svg_path="/replay.svg"
+			header="2. We Record It"
+			description="We will use our capture cards to record your replays so you don't need a setup!"
+			svg_path={camera_icon}
 		/>
 
 		<DescriptionCard
-			header="We Post It"
+			header="3. We Host It"
 			description="Your VOD then gets added to this site with a video preview, title, player name, and tags!"
-			svg_path="/replay.svg"
+			svg_path={host_icon}
 		/>
 
 		<DescriptionCard
-			header="You Search VODS"
-			description="Filter through many vods using the searchbar!"
-			svg_path="/replay.svg"
+			header="4. You Search VODS"
+			description="Anyone can filter through VODs using the searchbar! Or, just check the VODs page."
+			svg_path={search_icon}
 		/>
 	</div>
 </section>
 
 <style>
 	.area {
-		background-color: #e0e1ff;
-		color: #1d1d1d;
+		background-color: var(--background-accent);
+		color: var(--text-primary);
 		font-family: sans-serif;
 		width: 100%;
 		text-align: center;
 	}
 
 	.descriptions {
-        display: flex;
-        justify-content: center;
-        flex: 1;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 5%;
+			display: grid;
+			align-content: center;
+			grid-template-columns:  repeat(2, 1fr);
+			gap: 2rem;
+			margin: 0 8dvw;
+	}
+
+	@media(max-width: 700px) {
+			.descriptions {
+					margin: 0 1rem;
+					gap: 0.7rem;
+          grid-template-columns: 1fr;
+      }
 	}
 </style>

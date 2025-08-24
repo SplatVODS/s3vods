@@ -1,4 +1,6 @@
 <script>
+	import { searchQuery, currentQuery } from '$lib/data/query_state.svelte.js';
+
 	let {
 		video_id = 'ZxxHfPM7NT8',
 		title = 'Title',
@@ -23,19 +25,17 @@
 
 	<div class="card-header-container">
 		<h3 class="card-title">{title}</h3>
-		<span>
 			<a
 				class="card-player-name"
 				href={social_link}
 				target="_blank"
 				rel="noopener noreferrer"
 				title="Visit player’s social profile">{player}</a>
-		</span>
 	</div>
 
 	<div class="card-tag-container">
 		{#each tags as tag}
-			<span class="card-tag">{tag}</span>
+			<a class="card-tag" aria-role="search tag button" onclick={() => {searchQuery.value = tag, currentQuery.value = tag}}>{tag}</a>
 		{/each}
 	</div>
 </div>
@@ -62,13 +62,13 @@
 		display: flex;
 		flex-direction: column;
 		margin: 0 25px;
-		box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
+		box-shadow: var(--box-shadow) 0px 5px 15px;
 		border-radius: 20px;
 		transition: all 0.3s ease-in-out;
 	}
 
 	.card:hover {
-		box-shadow: rgba(70, 70, 255, 1) 0px 5px 30px;
+		box-shadow: var(--main-purple) 0px 5px 30px;
 		transform: translateY(-10px);
 	}
 
@@ -76,24 +76,22 @@
 		display: flex;
 		flex-direction: column;
 		padding: 4% 0 4% 4%;
-		background-color: #f4f5f6;
+		background-color: var(--surface);
 	}
 
 	.card-title {
-		color: #0d0d0d;
+		color: var(--text-primary);
 		cursor: default;
 		margin: 0;
 	}
 
 	.card-player-name {
 		font-weight: bold;
-		color: red;
-		text-decoration: none;
-		transition: text-decoration 0.3s ease-in-out;
+		color: var(--text-accent);
 	}
 
 	.card-player-name:hover {
-		text-decoration: underline;
+		text-decoration: none		;
 	}
 
 	.card-tag-container {
@@ -103,17 +101,23 @@
 		border-radius: 0px 0px 20px 20px;
 		padding: 4% 0 4% 4%;
 		gap: 10px;
-		background-color: #e8e8e8;
+		background-color: var(--surface-light);
 	}
 
 	.card-tag {
-		color: #0d0d0d;
-		border: 1px solid #0d0d0d;
+		color: var(--text-secondary);
+		border: 1px solid var(--text-secondary);
 		border-radius: 20px;
 		padding: 5px 10px;
 		font-size: 16px;
 		font-weight: bold;
 		font-family: monospace;
-		cursor: default;
+			transition: all 0.2s ease-in-out;
+	}
+
+	.card-tag:hover {
+			color: var(--background);
+			background-color: var(--hover-blue);
+			transform: translateY(-2px);
 	}
 </style>
