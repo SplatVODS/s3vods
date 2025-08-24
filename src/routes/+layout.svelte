@@ -7,6 +7,7 @@
 
 <div class="layout-container">
     <Nav/>
+    <div style="margin-bottom: 4rem;"></div>
     {@render children()}
 </div>
 
