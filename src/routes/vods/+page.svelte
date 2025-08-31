@@ -1,12 +1,11 @@
 <script lang="ts">
     import processedVideos from "$lib/data/video_objects";
     import YtVideoCard from "$lib/components/YTVideoCard.svelte";
-		import { currentQuery, searchQuery } from '$lib/data/query_state.svelte';
+	import { searchQuery } from '$lib/data/query_state.svelte';
     import Search from "$lib/components/Search.svelte";
-		import RedirectButton from '$lib/components/RedirectButton.svelte';
-		import { MediaQuery } from 'svelte/reactivity';
+	import { MediaQuery } from 'svelte/reactivity';
 
-		const screen_size_small = new MediaQuery('max-width: 768px');
+	const screen_size_small = new MediaQuery('max-width: 768px');
 
     let currentPage: number = $state(1);
     const itemsPerPage: number = 6; // Changed to 6 items per page by default
@@ -137,7 +136,6 @@
 	{:else}
 <div class="card-grid">
     {#each paginatedVideos as video}
-        <!-- <VideoCard {...video}/> -->
         <YtVideoCard {...video}/>
     {/each}
 
@@ -152,7 +150,7 @@
         align-items: center;
         padding: 25px 0 0 0;
         flex-wrap: wrap;
-				margin-bottom: 20px;
+		margin-bottom: 20px;
     }
 
     .pagination-controls {
@@ -197,7 +195,6 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         flex: 1; /* Takes remaining space after nav */
-        overflow-y: scroll; /* Allow scrolling if needed */
         padding: 35px 0;
         row-gap: 35px;
         align-items: start;

@@ -32,7 +32,8 @@
 		<nav>
 			<ul class="nav-list">
 				<li><a href="/" class="nav-link">Home</a></li>
-				<li><a href="/vods"  class="nav-link">Vods</a></li>
+				<li><a href="/vods" class="nav-link">Vods</a></li>
+				<li><a href="/community" class="nav-link">Community</a></li>
 			</ul>
 		</nav>
 	</div>
